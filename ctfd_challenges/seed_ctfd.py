@@ -36,8 +36,23 @@ EMAIL = sys.argv[3] if len(sys.argv) > 3 else "admin@uit.edu.vn"
 PASSW = sys.argv[4] if len(sys.argv) > 4 else "AdminUIT@2026"
 CTF_NAME = "Seminar An toan thong tin - UIT"
 
-# ---- Dinh nghia 2 challenge (file nam trong cung thu muc nay) ----
+# ---- Dinh nghia 3 challenge (file nam trong cung thu muc nay) ----
 CHALLENGES = [
+    {
+        "folder": "cau0",
+        "name": "Câu 0 - Khởi động (Welcome)",
+        "category": "Welcome",
+        "description": ("Chào mừng bạn đến với CTF của UIT! 🎉\n\n"
+                        "CTF là cuộc thi tìm 'flag' — chuỗi bí mật dạng UIT{...} được giấu trong mỗi "
+                        "thử thách. Câu khởi động này giúp bạn làm quen cách NỘP flag.\n\n"
+                        "Flag của câu này là:  UIT{welcome_to_uit_ctf}\n\n"
+                        "Hãy copy chuỗi trên, dán vào ô Flag bên dưới rồi bấm Submit. Đúng sẽ hiện "
+                        "'Correct' và bạn được cộng điểm. Chúc bạn chơi vui!"),
+        "value": 10,
+        "flag": "UIT{welcome_to_uit_ctf}",
+        "hint": "Copy đúng nguyên chuỗi UIT{welcome_to_uit_ctf} (gồm cả 'UIT{' và '}') rồi dán vào ô Flag.",
+        "files": [],
+    },
     {
         "folder": "cau2",
         "name": "Câu 1 - Truy tìm flag trong ảnh (Steganography)",
@@ -46,7 +61,7 @@ CHALLENGES = [
                         "Hoàn thành logic còn thiếu trong stego_tool.py để đọc file và lấy ra đáp án này."
                         "\n\nChạy: python stego_tool.py worldcup.png"),
         "value": 150,
-        "flag": "UIT{h1dd3n_1n_pl41n_t3xt}",
+        "flag": "UIT{hidden_in_plain_text}",
         "hint": ("Làm cách nào đọc hết byte của file rồi tìm chuỗi UIT{...} trong đó? "
                  "Gợi ý: open(duong_dan, 'rb').read() để lấy byte, đổi sang text bằng "
                  ".decode('latin-1','ignore'), rồi re.search(r'UIT\\{[^}]+\\}', text)."),
@@ -63,7 +78,7 @@ CHALLENGES = [
                         "khai báo. Thử tìm cách trở thành admin để nhận vé VIP."
                         "\n\nhttps://web-production-57788.up.railway.app/"),
         "value": 200,
-        "flag": "UIT{c00k1e_n0t_s4f3}",
+        "flag": "UIT{cookie_not_safe}",
         "hint": ("Mở F12 → Application → Cookies: server đang gán cookie role = 'user'. "
                  "Làm cách nào để trở thành 'admin'?"),
         "files": [],
@@ -79,6 +94,7 @@ MANAGED_NAMES = {
     "Câu 2 - Truy tìm flag trong ảnh (Steganography)",    # ten cu cua stego (truoc khi danh so lai)
     "Câu 3 - Khai thác Cookie web (Web Security)",        # ten cu cua web (truoc khi danh so lai)
     # --- ten hien tai (se xoa roi tao lai) ---
+    "Câu 0 - Khởi động (Welcome)",
     "Câu 1 - Truy tìm flag trong ảnh (Steganography)",
     "Câu 2 - Khai thác Cookie web (Web Security)",    # ten truoc khi doi theme World Cup
     "Câu 2 - Vé VIP chung kết World Cup",

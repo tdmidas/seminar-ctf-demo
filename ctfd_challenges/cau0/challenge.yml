@@ -1,0 +1,28 @@
+name: "Câu 0 - Khởi động (Welcome)"
+author: "Seminar UIT"
+category: "Welcome"
+description: |
+  Chào mừng bạn đến với CTF của UIT! 🎉
+
+  CTF là cuộc thi tìm "flag" — chuỗi bí mật dạng UIT{...} được giấu trong mỗi
+  thử thách. Câu khởi động này giúp bạn làm quen cách NỘP flag.
+
+  Flag của câu này là:  UIT{welcome_to_uit_ctf}
+
+  Hãy copy chuỗi trên, dán vào ô Flag bên dưới rồi bấm Submit. Đúng sẽ hiện
+  "Correct" và bạn được cộng điểm. Chúc bạn chơi vui!
+value: 10
+type: standard
+extra:
+  initial: 10
+state: visible
+version: "1.0"
+
+flags:
+  - UIT{welcome_to_uit_ctf}
+
+hints:
+  - content: "Copy đúng nguyên chuỗi UIT{welcome_to_uit_ctf} (gồm cả 'UIT{' và '}') rồi dán vào ô Flag."
+    cost: 0
+
+files: []
