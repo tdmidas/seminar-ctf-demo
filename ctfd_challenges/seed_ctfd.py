@@ -56,9 +56,10 @@ CHALLENGES = [
         "folder": "cau3",
         "name": "Câu 2 - Vé VIP chung kết World Cup",
         "category": "Web Security",
-        "description": ("Chủ tịch FIFA chỉ trao vé VIP dự trận chung kết cho tài khoản có quyền admin. "
-                        "Bạn đang là 'user' thường — hãy tìm cách vượt quyền lên admin để vào trang quản trị "
-                        "nhận vé. Flag (dạng UIT{...}) được in ngay trên tấm vé VIP."
+        "description": ("Trang đặt vé World Cup phân quyền bằng cookie. Tài khoản của bạn đang có "
+                        "role=user nên chỉ xem được vé thường — vé VIP chung kết (kèm flag UIT{...}) "
+                        "chỉ mở cho admin. Web tin hoàn toàn vào cookie role phía trình duyệt; hãy "
+                        "tìm cách nâng quyền thành admin để lấy vé."
                         "\n\nhttps://web-production-57788.up.railway.app/"),
         "value": 200,
         "flag": "UIT{c00k1e_n0t_s4f3}",
