@@ -1,0 +1,25 @@
+name: "Câu 1 - Truy tìm flag trong ảnh (Steganography)"
+author: "Seminar UIT"
+category: "Steganography"
+description: |
+  Ảnh world cup chứa một thông điệp bí mật — một flag dạng UIT{...}. Hoàn thành
+  logic còn thiếu trong `stego_tool.py` để đọc file và lấy ra đáp án này.
+
+  Cách chạy:  python stego_tool.py worldcup.png
+value: 150
+type: standard
+extra:
+  initial: 150
+state: visible
+version: "0.6"
+
+flags:
+  - UIT{h1dd3n_1n_pl41n_t3xt}
+
+hints:
+  - content: "Làm cách nào đọc hết byte của file rồi tìm chuỗi UIT{...} trong đó? Gợi ý: open(duong_dan, 'rb').read() để lấy byte, đổi sang text bằng .decode('latin-1','ignore'), rồi re.search(r'UIT\\{[^}]+\\}', text)."
+    cost: 0
+
+files:
+  - worldcup.png
+  - stego_tool.py
