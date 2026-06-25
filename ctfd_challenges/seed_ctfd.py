@@ -57,11 +57,13 @@ CHALLENGES = [
         "name": "Câu 1 - Truy tìm flag trong ảnh (Steganography)",
         "category": "Steganography",
         "description": ("Ảnh world cup chứa một thông điệp bí mật — một flag dạng UIT{...}. "
-                        "Hoàn thành logic còn thiếu trong stego_tool.py để đọc file và lấy ra đáp án này."
-                        "\n\nChạy: python stego_tool.py worldcup.png"),
+                        "Hoàn thành logic còn thiếu trong stego_tool.py (Python) hoặc stego_tool.cpp (C++) "
+                        "để đọc file và lấy ra đáp án này."
+                        "\n\nChạy (Python): python stego_tool.py worldcup.png"
+                        "\nChạy (C++): g++ -std=c++17 -O2 -o stego_tool stego_tool.cpp  →  ./stego_tool worldcup.png"),
         "value": 150,
         "flag": "UIT{hidden_in_plain_text}",
-        "files": ["worldcup.png", "stego_tool.py"],
+        "files": ["worldcup.png", "stego_tool.py", "stego_tool.cpp"],
     },
     {
         "folder": "cau3",
