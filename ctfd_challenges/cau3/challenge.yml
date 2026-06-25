@@ -19,8 +19,6 @@ version: "0.8"
 flags:
   - UIT{cookie_not_safe}
 
-hints:
-  - content: "Mở F12 → Application → Cookies: server đang gán cookie role = 'user'. Làm cách nào để trở thành 'admin'?"
-    cost: 0
+hints: []
 
 files: []

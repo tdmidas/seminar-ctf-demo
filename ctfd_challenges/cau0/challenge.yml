@@ -21,8 +21,6 @@ version: "1.0"
 flags:
   - UIT{welcome_to_uit_ctf}
 
-hints:
-  - content: "Copy đúng nguyên chuỗi UIT{welcome_to_uit_ctf} (gồm cả 'UIT{' và '}') rồi dán vào ô Flag."
-    cost: 0
+hints: []
 
 files: []

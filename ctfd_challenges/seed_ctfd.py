@@ -50,7 +50,6 @@ CHALLENGES = [
                         "'Correct' và bạn được cộng điểm. Chúc bạn chơi vui!"),
         "value": 10,
         "flag": "UIT{welcome_to_uit_ctf}",
-        "hint": "Copy đúng nguyên chuỗi UIT{welcome_to_uit_ctf} (gồm cả 'UIT{' và '}') rồi dán vào ô Flag.",
         "files": [],
     },
     {
@@ -62,9 +61,6 @@ CHALLENGES = [
                         "\n\nChạy: python stego_tool.py worldcup.png"),
         "value": 150,
         "flag": "UIT{hidden_in_plain_text}",
-        "hint": ("Làm cách nào đọc hết byte của file rồi tìm chuỗi UIT{...} trong đó? "
-                 "Gợi ý: open(duong_dan, 'rb').read() để lấy byte, đổi sang text bằng "
-                 ".decode('latin-1','ignore'), rồi re.search(r'UIT\\{[^}]+\\}', text)."),
         "files": ["worldcup.png", "stego_tool.py"],
     },
     {
@@ -79,8 +75,6 @@ CHALLENGES = [
                         "\n\nhttps://web-production-57788.up.railway.app/"),
         "value": 200,
         "flag": "UIT{cookie_not_safe}",
-        "hint": ("Mở F12 → Application → Cookies: server đang gán cookie role = 'user'. "
-                 "Làm cách nào để trở thành 'admin'?"),
         "files": [],
     },
 ]

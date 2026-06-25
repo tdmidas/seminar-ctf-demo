@@ -16,9 +16,7 @@ version: "0.6"
 flags:
   - UIT{hidden_in_plain_text}
 
-hints:
-  - content: "Làm cách nào đọc hết byte của file rồi tìm chuỗi UIT{...} trong đó? Gợi ý: open(duong_dan, 'rb').read() để lấy byte, đổi sang text bằng .decode('latin-1','ignore'), rồi re.search(r'UIT\\{[^}]+\\}', text)."
-    cost: 0
+hints: []
 
 files:
   - worldcup.png
